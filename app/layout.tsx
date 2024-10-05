@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import StarsCanvas from "@/components/main/StarBackground";
+import Navbar from "@/components/main/Navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -13,7 +14,6 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
-
 export const metadata: Metadata = {
   title: "Islam-FullStack",
   description: "This is my Portfolio",
@@ -28,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-[#030014] overflow-y-scroll antialiased`}>
         <StarsCanvas />
+        <Navbar />
         {children}
       </body>
     </html>
