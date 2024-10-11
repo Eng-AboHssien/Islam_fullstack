@@ -12,13 +12,13 @@ const Navbar = () => {
         <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
           <div className="flex items-center justify-between border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-300 w-full h-auto">
             <a href="/about-me" className="cursor-pointer">
-              about me
+              About me
             </a>
             <a href="/skills" className="cursor-pointer">
-              skills
+              Skills
             </a>
             <a href="/projects" className="cursor-pointer">
-              projects
+              Projects
             </a>
           </div>
         </div>
